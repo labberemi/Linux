@@ -1,0 +1,8 @@
+S'il y a l'erreur: 
+• if (! defined('root_path')) { // phpcs:disable psr1.files.sideeffects define('root_path', __dir__ . directory_separator); // phpcs:enable
+
+Faire ceci:
+• sudo apt install libapache2-mod-php8.1
+• sudo systemctl restart apache2
+
+:)
