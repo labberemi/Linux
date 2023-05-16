@@ -1,0 +1,7 @@
+$ sudo certbot delete
+
+certbot delete --cert-name example.com
+
+certbot --apache
+certbot certonly --manual --preferred-challenges http-01 -d 'nom_domain'
+certbot certonly --manual --preferred-challenges dns -d 'nom_domain,*.nom_domain'

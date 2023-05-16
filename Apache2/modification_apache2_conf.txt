@@ -1,0 +1,13 @@
+sudo a2enmod rewrite
+sudo service apache2 restart
+
+vim /etc/apache2/apache2.conf
+
+Pour retirer les index des URL:
+
+<Directory /var/www/>
+#       Options Indexes FollowSymLinks
+        Options FollowSymLinks
+        AllowOverride All
+        Require all granted
+</Directory>
